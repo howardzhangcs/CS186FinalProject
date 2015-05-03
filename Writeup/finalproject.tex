@@ -14,15 +14,21 @@
 \author{Peter Bang, Joon Yang, Howard Zhang}
 \title{Computer Science 186: Economics and Computation \\ An Analysis of Automated Market Makers}
 \date{\today}
-\maketitle\
+\maketitle
 \section*{Abstract}
 \section*{Introduction}
-Market makers serve an important function in ... \\ \\
-In a continuous double auction, the exchange takes on no risk, but liquidity in the market may be
-limited and transaction costs may be high. In class, we looked at automated market makers, which
-are provided by the exchange (e.g. prediction market) and has an attractive property of a bounded
-loss. \\ \\ 
-We were interested in exploring in more detail recent developments in automated market makers.  This project was motivated by the Logarithmic Market Scoring Rules (LMSR) (Hanson, 2002) as well as developments in the fields of financial economics and market microstructure. Specifically, we look at the liquidity sensitive LMSR (Othman et al., 2010), and the ...
+We are interested in exploring recent developments in market mechanisms that are used to create the trading rules in a prediction market. Wolfers and Zitzewitz (2004) provide evidence of the accuracy and effectiveness of prediction markets from real data, focusing on the Iowa Electronic Markets (elections), TradeSports (political events, current events, and sports and entertainment), Hollywood Stock Exchange (movie earnings), and Economic Derivatives (future economic data releases). These exchanges use a variety of different types of contracts, real versus virtual currency, as well as different market mechanisms and trading rules. \\
+
+Two common mechanisms include the \emph{continuous double auction} and \emph{automated market makers}. In a \emph{continuous double auction}, the exchange takes on no risk and trades occur between participants. Buyers submit bids and sellers submit asks with desired quantities, and trades occur whenever the two sides reach an agreeable price (Wolfers and Zitzewitz, 2004). However, the liquidity in the market may be limited and transaction costs may be high. A popular alternative are \emph{automated market makers}, where all trades occur through a central market maker which is provided by the exchange. One important automated market maker is the Logarithmic Market Scoring Rule Market Maker (LMSR) (Hanson, 2002), which has equivalence to the logarithmic scoring rule used in information elicitation. \\ 
+
+At the same time that a \emph{continuous double auction} can be used in prediction markets, they are also integral to financial markets that occur over exchanges, including the New York Stock Exchange (NYSE) and the Hong Kong Stock Exchange (HKSE). However, these markets are not precisely \emph{continuous double auctions} as many stock exchanges in practice select Designated Market Makers (DMMs) responsible for supplying baseline liquidity. These market makers seek to gain profit by collecting the bid‐ask spread while providing liquidity to other traders, never holding position in any stock for too long. These market makers may also have informational advantage over average traders since they see a greater magnitude of orders. \\
+
+Hence we were intrigued by the adaption of developments in the fields of financial economics and market microstructure that could be applied to automated market makers. These developments include the liquidity sensitive LMSR (Othman \emph{et al.}, 2010), the Zero Profit Algorithm (Das, 2005; Das and Magdon-Ismail, 2008), and the Bayesian Market Maker (Brahma \emph{et al.}, 2012). 
+\section*{Automated Market Makers}
+\subsection*{LMSR}
+\subsection*{Liquidity Sensitive LMSR}
+\subsection*{Zero Profit Algorithm}
+\subsection*{Bayesian Market Maker}
 \section*{Simulation}
 \section*{Conclusion}
 \section*{Appendix}
